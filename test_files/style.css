@@ -1,0 +1,16 @@
+/**
+ * Theme Name: Florence Child
+ * Theme URI: http://alienwp.com/themes/florence/
+ * Description: Florence child theme
+ * Version: 0.1
+ * Author: AlienWP
+ * Author URI: http://alienwp.com
+ * Tags: flexible-width, theme-options, threaded-comments, microformats, translation-ready, two-columns, right-sidebar, sticky-post, custom-background, featured-images
+ * Template: florence
+ *
+ */
+
+/* Load parent's CSS */
+@import url("../florence/style.css");
+
+/* Add your custom styles after this line. */

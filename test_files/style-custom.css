@@ -1,0 +1,364 @@
+/*
+Theme Name: Florence Child Custom Style Sheet
+Theme URI: http://alienwp.com/themes/florence/
+Description: Florence child theme
+Version: 0.1
+Author: Chris Carvey
+Author URI: http://ww.dsgnr.com
+Tags: flexible-width, theme-options, threaded-comments, microformats, translation-ready, two-columns, right-sidebar, sticky-post, custom-background, featured-images
+For Template: florence-child
+*/
+
+/* Load parent's CSS */
+/*@import url("../florence/style.css");*/
+
+
+/* Add your custom styles after this line. */
+
+/*font changes*/
+
+body, input[type="text"], input[type="password"], input.text, input.title, textarea, button, input[type="button"], input[type="reset"], input[type="submit"] {
+	font-family: verdana, arial, sans-serif;
+}
+	
+body {
+font-family: verdana, arial, sans-serif;
+font: 1em/1.75em verdana, arial, sans-serif;
+}
+
+em, cite {
+	font-style: italic;
+	font-family: verdana, arial, sans-serif;
+}
+
+address {
+	font-style: italic;
+	font-family: verdana, arial, sans-serif;
+	margin: 0 0 1.75em 0
+}
+
+ins {
+	font-family: verdana, arial, sans-serif;
+	background: #f5f5f5;
+	color: #000;
+	text-decoration: none;
+	font-style: italic;
+}
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+	cursor: pointer;
+	-webkit-appearance: button;
+	font-family: verdana, arial, sans-serif;
+}
+
+dl dt {
+	margin: 0;
+	font-size: 1.14285714285714em;
+	line-height: 1.75em;
+	font-family: verdana, arial, sans-serif;
+	font-style: italic;
+	font-weight: normal;
+}
+
+/* Blockquotes
+-------------------------------------------------------------- */
+blockquote, blockquote blockquote blockquote {
+	overflow: hidden;
+	padding: 0 0 0 35px;
+	font-size: 1.14285714285714em;
+	font-family: verdana, arial, sans-serif;
+	font-style: italic;
+	color: #aaa;
+	background: url(images/quote.png) no-repeat 0 4px;
+}
+
+
+input[type="text"], input[type="password"], input[type="email"], .input-text, textarea, select {
+	font-family:  verdana, arial, sans-serif;
+	font-size: 0.857142857142857em;
+	border: 1px solid #ddd;
+	border-color: rgba(0,0,0,.08);
+	padding: 5px;
+	outline: none;
+	margin: 0;
+	display: block;
+	background: #f7f7f7;
+}
+
+
+.ProximaNovaA-Light { 
+	font-family: ProximaNovaA-Light, verdana, arial;
+	font-weight: normal;
+	font-style: normal;
+}
+.ProximaNovaA-Regular { 
+	font-family: ProximaNovaA-Regular, verdana, arial;
+	font-weight: normal;
+	font-style: normal;
+}
+.ProximaNova-Extrabld { 
+	font-family: ProximaNova-Extrabld, verdana, arial;
+	font-weight: normal;
+	font-style: normal;
+}
+.ProximaNova-Bold { 
+	font-family: ProximaNova-Bold, verdana, arial;
+	font-weight: normal;
+	font-style: normal;
+}
+
+#site-title,#site-description,h1, h2, h3, h4, h5 { 
+	font-family: ProximaNova-Bold; 
+	font-weight: normal; 
+	font-style: normal; 
+}
+#content ul li {
+line-height:1.45em;
+}
+
+#sidebar-header h3, #sidebar-social h3 {
+	display:inline;
+}
+
+#sidebar-header {
+	line-height: 1.4em;
+	font-size:.9em;
+	max-width: 250px;
+	float: left;
+}
+
+#sidebar-social .addthis_toolbox {
+	display:inline-block;
+	
+}
+
+a.inactive {
+	font-weight:bold;
+	color:#000;
+	padding-top:5px;
+}
+
+a.inactive:hover {
+	color:#000;
+	text-decoration:none;
+	border-bottom:0px;
+	border-style:none;
+}
+
+.addthis_toolbox a, .addthis_toolbox a:hover{
+	border-bottom:0px;padding-bottom:0px;border-style:none;
+}
+
+	.singular-post #menu-primary, .singular-page #menu-primary, .singular-attachment #menu-primary, .singular #menu-primary, .taxonomy #menu-primary{
+	margin-bottom: 12px;
+	font-family:ProximaNova-Bold, verdana, arial;
+	font-size:1.1em;
+	}
+	
+	#breadcrumbs {
+	margin-bottom: 28px;
+	font-size:.75em;
+	}
+	
+	#breadcrumbs ul {
+		list-style-type:none;
+		margin:0 0 0 0;
+	}
+
+	#breadcrumbs li {
+		display:inline;
+		margin-right:1em;
+	}
+
+	#breadcrumbs .sep{
+		padding-left: 1em;
+	}
+	
+	.actual{
+		color:#aaa !important;
+	}
+	
+	a[title="Blog"], a[title="Blog"] + span.sep{
+		display:none;
+	}
+	
+	/*.page-template-left-column #content {
+		float:right !important;
+	}
+	
+	.page-template-left-column #sidebar-primary {
+		float:left !important;
+	}*/
+	
+	.page-template-member-organizations #content {
+		float:right !important;
+	}
+	
+	.page-template-member-organizations #sidebar-primary {
+		float:left !important;
+	}
+	
+	.stick{
+		position: fixed;
+		top: 0;
+	}
+	
+	.listnodes{
+		max-width:250px;
+	}
+	
+	.home .listnodes{
+		max-width:468px;
+	}
+	
+	.sidebar {
+		font-size: .9em;
+		line-height:1.4em;
+	}
+	
+	.presscontainer .articletitle{
+		font-weight:bold;
+		font-size:1.4em;
+	}
+	
+	.presscontainer h2 {
+		font-size: 1.42857142857143em;
+	}
+	
+	.mission {
+		width: 44%;
+		font-size: 2.75em;
+		line-height: 1.25em;
+		float: left;
+		margin-right: 6%;
+	}
+	
+	.mission p {
+	font-family:ProximaNova-Bold,ProximaNova-Regular,ProximaNova-Light, verdana, arial;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1.15em;
+	}
+	
+	.mission h3 {
+		font-size: .55em;
+	}
+	.otherinfo .memberlist{
+		display:inline;
+		float:left;
+		max-width:468px;
+	}
+	.otherinfo ul {
+	list-style: disc;
+	margin: 0 0 1.75em 1.2em;
+	width:90%;
+}
+	
+
+#site-header {
+	position:relative;
+	padding: 15px 0 20px 0;
+	padding-top: 15px;
+	padding-right: 0px;
+	padding-bottom: 20px;
+	padding-left: 0px;
+}
+
+
+#header-container{
+	
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	border-style:none;
+}
+
+.wrap{
+	width:100%;
+	max-width:100%;
+	text-align:center;
+}
+
+#main, #header-container, .footer-content {
+	text-align:left;
+		max-width:940px;
+		margin:0 auto;
+		float:none;
+	}
+	
+	#menu-primary {
+	float: left;
+	width: 100%;
+	position: relative;
+	z-index: 2;
+	background:#f3f3f3;
+	border-bottom: 1px solid #ddd;
+	margin-top:20px;
+	margin-bottom: 40px;
+	}
+	
+	#menu-primary li a {
+	padding: 1.1em 1.7em 1em 1.7em;
+	border-bottom: none;
+	font-size: 0.714285714285714em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	word-spacing: 1px;
+	}
+	
+	footer#site-footer {
+	background:#f3f3f3;
+	border-top: 1px solid #ddd;
+	}
+	
+	.home .entry-title {
+		margin-top:20px;
+		margin-bottom:0em;
+	}
+	
+	.home .subhead {
+		color:#bbb;
+		font-size:1em;
+		margin-bottom:20px;
+	}
+	
+	#sidebar-primary .widget h3, .home #main h3 {
+		font-size:1.1em;
+	}
+	
+	.home #main .mission h3 {
+		font-size:18px;
+	}
+	
+	#sidebar-social{
+		width:33.3%;
+		max-width:300px;
+		float:left;
+		position:relative;
+		top:18px;
+		z-index:100;
+	}
+
+ #sidebar-header {
+	width:33.3%;
+	position:relative;
+	top:17px;
+	z-index:100;
+	}
+
+	#branding {
+		width:33.3%;
+		text-align:left;
+		z-index:100;
+		float:left;
+		position:relative;
+		display:inline-block;
+	}
+	
+	#branding img{
+		width:100%;
+		max-width:240px;
+	}

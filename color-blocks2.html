@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!-- untitled.html
+Created by Christopher Carvey, (@Chrisdigital) at , 2013-03-05.
+Copyright (c)  DSGNR Unlimited. All rights reserved.
+-->
+
+  <title>colorblocks.html</title>
+  <meta name="description" content=""/>
+  <meta name="author" content="Christopher Carvey"/>
+  <meta name="robots" content="index,follow"/>
+  <meta name="distribution" content="global"/>
+  <meta http-equiv="content-language" content="us-en"/>
+  <meta name="copyright" content="&copy; 2011 Christopher Carvey. All logos and trademarks are property of their respective owners."/>
+  <meta name="Revisit-After" content="7 Days"/>
+
+  
+
+  <!-- CSS concatenated and minified via ant build script-->
+  <!--<link rel="stylesheet" href="css/style.css"/>-->
+  <!-- end CSS-->
+
+  <!--<script src="js/libs/modernizr-2.0.6.min.js"></script>-->
+  <style>
+  *{
+    margin:0;
+    padding:0;
+  }
+  
+ .wrapper{
+   position:relative;
+ }
+ 
+  body {
+    margin:0;
+    padding:0;
+    background:white url(images/screengrab.png) top center no-repeat;
+    }
+    
+    ul {
+      margin:0;
+      padding:0;
+      height:125px;
+    }
+    
+  li {
+    margin:0;
+    padding:0;
+    width:16.6666667%;
+    display:inline-block;
+    height:125px;
+    line-height:125px;
+  }
+  
+  
+  /*set default colors*/
+  
+  #item0 {
+    background: yellow;
+  }
+  
+  #item1 {
+    background: green;
+  }
+  
+  #item2 {
+    background: black;
+  }
+  
+  #item3 {
+    background: teal;
+  }
+  
+  #item4 {
+    background: fuchsia;
+  }
+  
+  #item5 {
+    background: orange;
+  }
+  
+  #item6 {
+    background: red;
+  }
+  
+  #item7 {
+    background: blue;
+  }
+  
+  #item8 {
+    background: aqua;
+  }
+  
+  #item9 {
+    background: purple;
+  }
+  
+  #item10 {
+    background: gray;
+  }
+  
+  #item11 {
+    background: maroon;
+  }
+  
+  /* Mix and match colors */
+  .pic0 {background: yellow  url(images/1.jpg) center center no-repeat !important; }
+  .pic1 {background: green  url(images/2.jpg) center center no-repeat !important; }
+  .pic2 {background: black  url(images/3.jpg) center center no-repeat !important;}
+  .pic3 {background: teal url(images/4.jpg) center center no-repeat !important; }
+  .pic4 {background: fuchsia url(images/5.jpg) center center no-repeat !important; }
+  .pic5 {background: orange url(images/6.jpg) center center no-repeat !important; }
+  .pic6 {background: red  url(images/7.jpg) center center no-repeat !important; }
+  .pic7 {background: blue  url(images/8.jpg) center center no-repeat !important; }
+  .pic8 {background: aqua  url(images/9.jpg) center center no-repeat !important; }
+  .pic9 {background: purple  url(images/10.jpg) center center no-repeat !important; }
+  .pic10 {background: gray  url(images/11.jpg) center center no-repeat !important; }
+  .pic11 {background: maroon  url(images/12.jpg) center center no-repeat !important;}
+  .pic12 {background: green  url(images/13.jpg) center center no-repeat !important; }
+  .pic13 {background: black  url(images/14.jpg) center center no-repeat !important;}
+  .pic14 {background: teal url(images/15.jpg) center center no-repeat !important; }
+  .pic15 {background: fuchsia url(images/16.jpg) center center no-repeat !important; }
+  .pic16 {background: orange url(images/17.jpg) center center no-repeat !important; }
+  .pic17 {background: red  url(images/18.jpg) center center no-repeat !important; }
+  .pic18 {background: blue  url(images/19.jpg) center center no-repeat !important; }
+  .pic19 {background: aqua  url(images/20.jpg) center center no-repeat !important; }
+  .pic20 {background: purple  url(images/21.jpg) center center no-repeat !important; }
+  .pic21 {background: gray  url(images/22.jpg) center center no-repeat !important; }
+  .pic22 {background: maroon  url(images/23.jpg) center center no-repeat !important;}
+  .pic23 {background: maroon  url(images/24.jpg) center center no-repeat !important;}
+  
+  .color0 {background-color: yellow !important}
+  .color1 {background-color: green !important}
+  .color2 {background-color: black !important}
+  .color3 {background-color: teal !important}
+  .color4 {background-color: fuchsia !important}
+  .color5 {background-color: orange !important}
+  .color6 {background-color: red !important}
+  .color7 {background-color: blue !important}
+  .color8 {background-color: aqua !important}
+  .color9 {background-color: purple !important}
+  .color10 {background-color: gray !important}
+  .color11 {background-color: maroon !important}
+  
+  .wrapper1 {
+    max-width:940px;
+    position:relative;
+    top:298px;
+    left:50%;
+    margin-left:-470px;
+  }
+  
+  </style>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="http:///ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script>
+  
+  //http://stackoverflow.com/questions/1527803/generating-random-numbers-in-javascript-in-a-specific-range
+  function getRandomArbitary (min, max) {
+      return parseInt(Math.random() * (max - min) + min) * 1;
+  }
+  
+  function getRandomArbitary2 (min, max) {
+      return parseInt(Math.random() * (max - min) + min) * 1;
+  }
+
+  //////Initialize Global varialbles---------------------------------
+  var pickholder = "";
+  var pickholder2 = "";
+  var pickholder3 = "";
+  var counter = "";
+  var pickstorage = new Array();
+  
+  
+  ///Main Pick function
+  function pickanumber2(min , max){
+    
+    
+    //////Child functions---------------------------------
+    
+     //choose random number 1
+     function getRandomArbitary (min, max) {
+         return parseInt(Math.random() * (max - min) + min) * 1;
+     }
+     
+     //choose random number 2
+     function getRandomArbitary2 (min, max) {
+          return parseInt(Math.random() * (max - min) + min) * 1;
+      }
+      
+     //choose random number 2
+    function getRandomArbitary3 (min, max) {
+          return parseInt(Math.random() * (max - min) + min) * 1;
+      }
+    
+    
+    //////Child Variables---------------------------------
+    
+    //pick and fix numbers
+     var randnum1 = Math.floor(getRandomArbitary (min, max));
+     var randnum2 = Math.floor(getRandomArbitary2 (min, max));
+     var randnum3 = Math.floor(getRandomArbitary2 (min, max));
+     var randnum4 = Math.floor(getRandomArbitary2 (min, max));
+     
+     //Global window object
+     //Advance global counter every time this runs
+     window.counter++;
+
+     //get current reference number from globals (from previous interval loops)
+     var currentr1 = window.pickholder;
+     var currentr2 = window.pickholder2;
+     var currentr3 = window.pickholder3;
+     
+     //display in console
+      console.log("current pick1 is " + currentr1);
+      console.log("current pick2 is " + currentr2);
+     
+     
+     //////Number Checks---------------------------------
+     
+     //Check if numbers are same, current displayed vs this pick, (random number 1)
+     if(currentr1 === randnum1 || currentr1 == max) { //if current pick and new picked numbers are equal or are equal to the max decrease r1
+       console.log("currentr1 and randnum1 were the same:  " + randnum1);
+       randnum1--;
+       console.log("randnum1 was changed by check 1:  " + randnum1);
+       return randnum1; 
+         
+     }
+
+     //Check if numbers are same, current displayed vs this pick, (random number 2)
+     if(currentr2 === randnum2 || currentr2 == max ) {//if current pick and new picked numbers are equal or are equal to the max decrease r2
+       console.log("currentr2 and randnum2 were the same:  " + randnum2);
+        randnum2--; 
+        console.log("randnum2 was changed by check 2:  " + randnum2);
+        return randnum2;
+        
+     }
+     
+     //Check if numbers are same, current displayed vs this pick, (random number 3)
+     if(currentr3 === randnum3 || currentr3 == max ) {//if current pick and new picked numbers are equal or are equal to the max decrease r2
+       console.log("currentr3 and randnum3 were the same:  " + randnum3);
+        randnum3--; 
+        console.log("randnum2 was changed by check 2:  " + randnum3);
+        return randnum3;
+     }
+     
+    
+     //Check if somehow the two diffent pickers chose same number, fix it (don't choose same)
+     if(randnum1 === randnum2) { //if current pick and new picked numbers are equal decrease r12i
+       console.log("randnum1 and randnum2 were the same:  " + randnum1);
+        randnum2--;
+        console.log("randnum2 was changed by check 3:  " + randnum2); 
+        return randnum2; 
+     } 
+     
+     //Global Counter reset, Global Array reset
+     //if counter is greater than max desired loops (proabably max number of images), start over
+     if (window.counter > 21){//number is tricky, should account for failed attempts to pick unused number
+       
+       //flush / empty array
+       window.pickstorage.length = 0;
+       console.log("array emptied");
+       
+       //flush / unset counter variable
+       window.counter = "";
+        console.log("counter flushed");
+     }
+     
+     //Check if number has been used in last # of picks (counter function determines #)
+     if($.inArray(randnum1, window.pickstorage) > -1){
+        //change downward if previously used
+         console.log("array check executed on: " + randnum1);  
+         randnum1--;
+         console.log("number changed: " + randnum1);
+         return randnum1; 
+           
+     }
+     
+     //Check if number has been used in last # of picks (counter function determines #)
+     if($.inArray(randnum2, window.pickstorage) > -1){
+       //change downward if previously used
+        console.log("array check executed on: " + randnum2);  
+        randnum2--;
+        console.log("number changed: " + randnum2); 
+        return randnum2;
+      }
+     
+     //////Result---------------------------------
+
+     //build classname for image background
+     var pickAPic = "pic" + randnum1;
+     
+     
+     //build classname for color
+     var colorPick = "color" + randnum3;
+
+
+     //build itemName
+     var itemPick = "li#item" + randnum2;
+     var itemPick2 = "li#item" + randnum4;
+
+     //Final Check
+     //failsafe check, kill if currently displaying, so it looks like it moved...
+     //forces image to only be viewed in one location at a time NO DUPLICATES
+     var target = ".images li." + pickAPic;
+     $(target).removeClass();
+     
+     //kill color, remove color bg if already displaying, does not apply to defaults
+     var target2 = ".images li." + colorPick;
+      $(target2).removeClass();
+
+     //EXECUTE - stick class on respective itemname
+     $(itemPick).addClass(pickAPic);
+     $(itemPick2).addClass(colorPick);
+     
+     //Store in GLOBAL window object
+     //store current pick outside function (to reference when called by next interval loop)
+     window.pickholder = randnum1;
+     window.pickholder2 = randnum2;
+     
+     //Store in GLOBAL window object
+     //store picks in array for reference
+     window.pickstorage.push(randnum1);
+     window.pickstorage.push(randnum2);
+     
+     
+     //display final number selection in console before next loop
+     console.log("executed and changed currentr1 to " + window.pickholder);
+     console.log("executed and changed currentr2 to " + window.pickholder2 + " ----");
+   }
+   
+  
+  //////Counters---------------------------------
+  //Six counters, cooresponds with six columns...
+  //This can probably be dynamic and looped in improved version
+  
+  function callme(){ //Pick a number every 1.2 seconds 
+    self.setInterval(function(){pickanumber2(1,24)},1200);
+  }
+  
+  function callme2(){ //Pick a number every 4.3 seconds 
+    self.setInterval(function(){pickanumber2(1,24)},4300);
+   }
+   
+  function callme3(){ //Pick a number every 3 seconds 
+    self.setInterval(function(){pickanumber2(1,24)},3000);
+   }
+   
+  function callme4(){ //Pick a number every 5.2 seconds 
+    self.setInterval(function(){pickanumber2(1,24)},5200);
+  }
+     
+  function callme5(){ //Pick a number every 3.750 seconds 
+    self.setInterval(function(){pickanumber2(1,24)},3750);
+  }
+      
+  function callme6(){ //Pick a number every 2 seconds 
+    self.setInterval(function(){pickanumber2(1,24)},2000);
+  }
+  
+  
+  //////Cleanup---------------------------------
+  //Garbage clean up for all these loops.....
+  //Number of clean up functions cooresponds with 2 rows to remove class buildup
+  
+  //clear TOP row, called separate from bottom
+  function callclear1(){
+    
+    //clean buildup of add class on TOP row
+    function clearout() {
+      $(".images .one li").removeClass();
+    }
+    
+    self.setInterval(function(){clearout()},30750);
+  }
+  
+  
+  //clear BOTTOM row, called seperate from top
+  function callclear2(){
+    
+    //clean buildup of addclass on BOTTOM row
+    function clearout() {
+      $(".images .two li").removeClass();
+    }
+    
+    self.setInterval(function(){clearout()},40200);
+  }
+  
+  
+  //////Ready, aim, FIRE!---------------------------------
+  //Let's do all this on document ready
+  $(document).ready(function() {
+   
+   
+   //initial call to execute picker for first time before counters
+   pickanumber2(1,24);
+   
+   
+   //Call pick a number (image picker) on a loop
+   callme();
+   callme2();
+   callme3();
+   callme4();
+   callme5();
+   callme6();
+   
+   
+   //call clear top row build up to execute, on interval loop
+   callclear1();
+   
+   
+   //call clear bottom row build up to execute, on interval loop
+   callclear2();
+ });
+ 
+ 
+  </script>
+</head>
+
+<body>
+<div class="wrapper"><div class="wrapper1"><div class="images" style="max-width:940px;">
+<ul class="one">
+  <li id="item0"></li><li id="item1"></li><li id="item2"></li><li id="item3"></li><li id="item4"></li><li id="item5"></ul><ul class="two"><li id="item6"></li><li id="item7"></li><li id="item8"></li><li id="item9"></li><li id="item10"></li><li id="item11"></li>
+</ul></div></div></div>
+
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;<br/>
+
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>-->
+  
+
+  <!-- scripts concatenated and minified via ant build script
+  <script defer src="js/plugins.js"></script>
+  <script defer src="js/script.js"></script>-->
+  <!-- end scripts-->
+
+
+<!--<script> // Change UA-XXXXX-X to be your site's ID
+    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  </script>-->
+
+
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
+</body>
+</html>
